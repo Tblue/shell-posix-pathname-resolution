@@ -1,4 +1,5 @@
-# resolve-path.sh - Portable POSIX-conformant shell implementation of POSIX pathname resolution
+# resolve-path.sh
+# Portable POSIX-conformant shell implementation of POSIX pathname resolution
 #
 # Requirements: A POSIX-conformant shell and system.
 #
