@@ -75,8 +75,11 @@ escapePath()
 #===================================================================
 resolvePath()
 # Resolve the path $1 (normalizing it and resolving all symlinks).
+#
 # On errors, returns 1. On success, echoes the resolved path and
-# returns 0.
+# returns 0. The resulting path will have NO trailing slashes
+# (except if it refers to the root directory, of course -- then
+# the result will be a single slash).
 #===================================================================
 {
     pathToResolve=$(makeAbsolute "$PWD" "$1")
