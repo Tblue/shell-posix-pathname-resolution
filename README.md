@@ -18,9 +18,8 @@ You can simply `source` the file `resolve-path.sh`.
 - Unfortunately, `resolvePath()` currently is somewhat slow.
   Patches welcome!
 - In violation of POSIX, paths ending with one or more slashes are
-  resolved successfully even if they don't refer to a directory.
-  However, as usual, path resolution will still fail if the path refers
-  to a non-existing file or directory.
+  resolved successfully even if they refer to an (existing) _file_
+  instead of an (existing) _directory_.
 - Symlink loops are not detected.
 - In violation of POSIX, an empty pathname is resolved successfully to
   the current directory.
