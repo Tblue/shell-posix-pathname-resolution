@@ -11,6 +11,8 @@ It resolves all relative references (`.` and `..`) in the path it gets
 passed as the first parameter, resolves all symlinks recursively and makes
 the path absolute.
 
+You can simply `source` the file `resolve-path.sh`.
+
 ## Limitations
 
 - Unfortunately, `resolvePath()` currently is somewhat slow.
